@@ -1,0 +1,40 @@
+/* Your board style here */
+.racer-table td {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(238, 238, 238);
+}
+.racer-table td.active {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+#player1-race td.finish {
+  background-image: url("images/finish.png");
+  background-size: cover;
+}
+
+#player2-race td.finish {
+  background-image: url("images/finish.png");
+  background-size: cover;
+}
+#player1-race td.active {
+  background-image: url("images/player_1.png");
+}
+#player2-race td.active {
+  background-image: url("images/player_2.png");
+}
+
+#player1-race td.finish.active {
+  background-repeat: no-repeat;
+  background-image: url('images/player_1.png'), url('images/finish.png');
+  background-size: 90%, cover;
+  background-position: center, top left;
+}
+
+#player2-race td.finish.active {
+  background-repeat: no-repeat;
+  background-image: url('images/player_2.png'), url('images/finish.png');
+  background-size: 90%, cover;
+  background-position: center, top left;
+}
